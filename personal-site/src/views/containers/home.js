@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Home extends Component{
   render(){
     return(
-      <h1>Jim Hough</h1>
+      <h1>James Hough</h1>
     )
   }
 }
