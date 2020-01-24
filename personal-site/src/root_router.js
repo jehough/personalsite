@@ -4,6 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import Home from './views/containers/home'
 
 export default class RootRouter extends Component{
   render(){
