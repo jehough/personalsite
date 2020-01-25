@@ -5,12 +5,16 @@ import {
   Switch
 } from 'react-router-dom';
 import Home from './views/containers/home'
+import NavSideBar from './views/containers/sidebar'
 
 export default class RootRouter extends Component{
   render(){
     return(
       <Router>
-        <Route exact path='/' component={Home} />
+        <NavSideBar />
+        <div className="main">
+          <Route path='/' component={Home}/>
+        </div>
       </Router>
     )
   }

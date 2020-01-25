@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.navside {
+  background-color: #384030;
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.main {
+  padding-left: 17%;
+}
