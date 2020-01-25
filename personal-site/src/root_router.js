@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from './views/containers/home'
 import NavSideBar from './views/containers/sidebar'
+import Blog from './views/containers/blog'
 
 export default class RootRouter extends Component{
   render(){
@@ -13,7 +14,10 @@ export default class RootRouter extends Component{
       <Router>
         <NavSideBar />
         <div className="main">
-          <Route path='/' component={Home}/>
+          <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/blog' component={Blog} />
+          </Switch>
         </div>
       </Router>
     )
