@@ -2,19 +2,28 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import Dropdown from '../components/dropdown.js'
 
 
 class NavSideBar extends Component {
+  state ={
+    dropdown: false
+  }
+
+  handleClick = () =>{
+    let clicked = false
+    this.state.dropdown ? clicked = false : clicked = true
+    this.setState({dropdown: clicked})
+  }
   render(){
     return(
-      <Navbar className="navside">
+      <Navbar className="navside" expand="lg">
         <Nav className="navItems">
           <Link to="/">Home</Link>
-          <NavDropdown title="Blog" id="basic-nav-dropdown">
-            <NavDropdown.Item><Link to='/blog'>Blog Post 1</Link></NavDropdown.Item>
-            <NavDropdown.Item><Link to='/blog'>Blog Post 2</Link></NavDropdown.Item>
-          </NavDropdown>
+        </Nav>
+        <Nav className="dropdown" onClick={this.handleClick}>
+          Blog 
+          {this.state.dropdown ? <Dropdown /> : null}
         </Nav>
       </Navbar>
     )
