@@ -37,18 +37,45 @@
   }
 }
 
+body {
+    background-color: #32ab97;
+}
 .navside {
   background-color: #384030;
   height: 100%;
-  width: 15%;
+  width: 12%;
+  padding-left: 1%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 2.4em;
+  word-spacing: .02em;
+  color: #FAECE3;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+}
+.navside a {
+  color: inherit;
+  text-decoration: none;
+  font-variant: small-caps;
 }
 
 .main {
+  margin: 0;
   padding-left: 17%;
+  font-family: Impact, Charcoal, sans-serif;
+  color: #384030
+}
+
+#self-image {
+  border-radius: 50%;
+  border-width: .5em;
+  border-color: white;
 }
