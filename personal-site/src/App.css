@@ -38,7 +38,7 @@
 }
 
 body {
-    background-color: #32ab97;
+    background-color: white;
 }
 .navside {
   background-color: #384030;
@@ -77,13 +77,24 @@ body {
 
 .mainHome {
   display: flex;
-  flex-direction: column;
+  margin-top: 12em;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
-.nameImage {
-  display: flex;
-  flex-direction: row;
+.header{
+  position: fixed;
+  margin: 0;
+  height: 10em;
+  width: 100%;
+  overflow: hidden;
+}
+
+#header-image{
+  width: 100%;
+
 }
 
 #self-image {
@@ -91,5 +102,5 @@ body {
   border-radius: 40%;
   border-width: .5em;
   border-color: grey;
-  width: 45%
+  width: 35%
 }
