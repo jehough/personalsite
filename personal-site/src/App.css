@@ -68,14 +68,28 @@ body {
 }
 
 .main {
+  display: flex;
   margin: 0;
   padding-left: 17%;
   font-family: Impact, Charcoal, sans-serif;
   color: #384030
 }
 
+.mainHome {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nameImage {
+  display: flex;
+  flex-direction: row;
+}
+
 #self-image {
-  border-radius: 50%;
+  border: solid;
+  border-radius: 40%;
   border-width: .5em;
-  border-color: white;
+  border-color: grey;
+  width: 45%
 }
