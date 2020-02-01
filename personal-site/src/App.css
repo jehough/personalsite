@@ -72,7 +72,14 @@ body {
   margin: 0;
   padding-left: 17%;
   font-family: Impact, Charcoal, sans-serif;
-  color: #384030
+  color: #1d1f21
+}
+
+.main h1 {
+  font-size: 3em;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: .05em .05em .05em #84d240
 }
 
 .mainHome {
@@ -103,6 +110,6 @@ body {
   border: solid;
   border-radius: 40%;
   border-width: .5em;
-  border-color: grey;
+  border-color: #1d1f21;
   width: 35%
 }
