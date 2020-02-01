@@ -14,9 +14,9 @@ class NavSideBar extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navItems">
           <Link to="/">Home</Link>
-        </Nav>
-        <Nav>
           <a href="https://jehough.github.io/">Blog</a>
+          <Link to="/projects">My Projects</Link>
+          <Link to="/backgroun">My Background</Link>
         </Nav>
         </Navbar.Collapse>
       </Navbar>
