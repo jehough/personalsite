@@ -6,15 +6,7 @@ import Dropdown from '../components/dropdown.js'
 
 
 class NavSideBar extends Component {
-  state ={
-    dropdown: false
-  }
 
-  handleClick = () =>{
-    let clicked = false
-    this.state.dropdown ? clicked = false : clicked = true
-    this.setState({dropdown: clicked})
-  }
   render(){
     return(
       <Navbar className="navside" expand="lg">
@@ -23,9 +15,8 @@ class NavSideBar extends Component {
         <Nav className="navItems">
           <Link to="/">Home</Link>
         </Nav>
-        <Nav className="dropdown" onClick={this.handleClick}>
-          Blog
-          {this.state.dropdown ? <Dropdown /> : null}
+        <Nav>
+          <a href="https://jehough.github.io/">Blog</a>
         </Nav>
         </Navbar.Collapse>
       </Navbar>
