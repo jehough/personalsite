@@ -16,7 +16,7 @@ class NavSideBar extends Component {
           <Link to="/">Home</Link>
           <a href="https://jehough.github.io/">Blog</a>
           <Link to="/projects">My Projects</Link>
-          <Link to="/backgroun">My Background</Link>
+          <Link to="/background">My Background</Link>
         </Nav>
         </Navbar.Collapse>
       </Navbar>

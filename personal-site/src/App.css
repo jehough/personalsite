@@ -37,9 +37,7 @@
   }
 }
 
-body {
-    background-color: white;
-}
+
 .navside {
   background-color: #1d1f21;
   height: 100%;
@@ -48,7 +46,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   overflow-x: hidden;
   padding-top: 20px;
   font-family: Impact, Charcoal, sans-serif;
@@ -75,7 +73,9 @@ body {
 .main {
   display: flex;
   margin: 0;
-  padding-left: 17%;
+  margin-top: 12em;
+  padding-left: 1%;
+  padding-right: 13%;
   font-family: Impact, Charcoal, sans-serif;
   color: #1d1f21
 }
@@ -89,7 +89,6 @@ body {
 
 .mainHome {
   display: flex;
-  margin-top: 12em;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -100,7 +99,7 @@ body {
   position: fixed;
   margin: 0;
   top: 0;
-  right: 0;
+  left: 0;
   height: 10em;
   width: 88%;
   overflow: hidden;
