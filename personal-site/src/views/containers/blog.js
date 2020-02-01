@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-export default class Blog extends Component{
+export default class Projects extends Component{
   render(){
     return(
 
-        <h1>This is my bloggy doo</h1>
+        <h1>These are my projects</h1>
 
     )
   }
