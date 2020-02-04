@@ -12,12 +12,10 @@ class NavSideBar extends Component {
       <Navbar className="navside" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="navItems">
-          <Link to="/">Home</Link>
-          <a href="https://jehough.github.io/">Blog</a>
-          <Link to="/projects">My Projects</Link>
-          <Link to="/background">My Background</Link>
-        </Nav>
+        <Nav><Link to="/">Home</Link></Nav>
+        <Nav><a href="https://jehough.github.io/">Blog</a></Nav>
+        <Nav><Link to="/projects">My Projects</Link></Nav>
+        <Nav><Link to="/background">My Background</Link></Nav>
         </Navbar.Collapse>
       </Navbar>
     )
