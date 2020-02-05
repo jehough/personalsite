@@ -1,4 +1,4 @@
-const projectList = [
+export const projectList = [
   {
     name: "Little Ocean Aquarium Shop",
     videoUrl: "https://www.youtube.com/embed/1keOmQmGdWw",

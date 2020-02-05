@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import DisplayCard from '../components/card'
+import {projectList} from '../../helper.js'
 
 export default class Projects extends Component{
   render(){
