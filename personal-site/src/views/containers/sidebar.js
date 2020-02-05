@@ -9,13 +9,15 @@ class NavSideBar extends Component {
 
   render(){
     return(
-      <Navbar className="navside" expand="lg" fixed="top">
+      <Navbar className="navside" expand="lg" fixed="bottom">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-        <Nav><Link to="/">Home</Link></Nav>
-        <Nav><a href="https://jehough.github.io/">Blog</a></Nav>
-        <Nav><Link to="/projects">My Projects</Link></Nav>
-        <Nav><Link to="/background">My Background</Link></Nav>
+          <div className="navLinks">
+            <Nav><Link to="/">Home</Link></Nav>
+            <Nav><a href="https://jehough.github.io/">Blog</a></Nav>
+            <Nav><Link to="/projects">My Projects</Link></Nav>
+            <Nav><Link to="/background">My Background</Link></Nav>
+          </div>
         </Navbar.Collapse>
       </Navbar>
     )

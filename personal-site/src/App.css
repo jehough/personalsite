@@ -50,11 +50,14 @@
 
 
 .navside {
-  display: flex;
   background-color: #1d1f21;
   margin: 0;
   padding-left: 1%;
+  height: 100%;
+  width: 13%;
   position: fixed;
+  left:0;
+  top:0;
   z-index: 3;
   overflow-x: hidden;
   font-family: Impact, Charcoal, sans-serif;
@@ -72,7 +75,10 @@
   text-decoration: none;
   font-variant: small-caps;
 }
-
+.navLinks{
+  display: flex;
+  flex-direction: column;
+}
 
 .main {
   display: flex;
