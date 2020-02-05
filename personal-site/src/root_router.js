@@ -14,8 +14,10 @@ export default class RootRouter extends Component{
   render(){
     return(
       <Router>
-        <Header />
-        <NavSideBar />
+        <div className="siteFrame">
+          <Header />
+          <NavSideBar />
+        </div>
         <div className="main">
           <Switch>
           <Route exact path='/' component={Home}/>

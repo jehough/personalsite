@@ -37,24 +37,25 @@
   }
 }
 
-
-#basic-navbar-nav{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 0;
+.header{
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 10em;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
+
 
 .navside {
   display: flex;
   background-color: #1d1f21;
-  height: 100%;
-  width: 14%;
+  margin: 0;
   padding-left: 1%;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
+  z-index: 3;
   overflow-x: hidden;
   font-family: Impact, Charcoal, sans-serif;
   font-size: 1.7em;
@@ -98,26 +99,17 @@
 
 }
 
-.header{
-  position: fixed;
-  margin: 0;
-  top: 0;
-  left: 0;
-  height: 10em;
-  width: 88%;
-  overflow: hidden;
-}
 
 .projectCards{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  z-index: 7;
 
 }
 
 #header-image{
   width: 100%;
-
 }
 
 #self-image {
