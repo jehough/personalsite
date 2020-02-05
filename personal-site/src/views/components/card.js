@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
 
-const DisplayCard = () => {
+const DisplayCard = props => {
   return(
     <Card>
       <iframe src="https://www.youtube.com/embed/1keOmQmGdWw"
