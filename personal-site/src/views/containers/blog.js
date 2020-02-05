@@ -7,7 +7,9 @@ export default class Projects extends Component{
     return(
       <div className="mainProjects">
         <h1>These are my projects</h1>
-        <DisplayCard />
+        <div className="projectCards">
+          {projectList.map(obj => <DisplayCard obj={obj}/>)}
+        </div>
       </div>
     )
   }
