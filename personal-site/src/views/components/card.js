@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 
 const DisplayCard = props => {
   return(
-    <Card style={{width: '18rem'}}>
+    <Card style={{width: '20rem'}}>
       <iframe src= {props.obj.videoUrl}
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

@@ -108,6 +108,13 @@
   overflow: hidden;
 }
 
+.projectCards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
 #header-image{
   width: 100%;
 
