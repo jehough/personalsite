@@ -8,17 +8,30 @@ class NavSideBar extends Component {
 
   render(){
     return(
-      <Navbar className="navside" expand="lg" fixed="bottom">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <div className="navLinks">
-            <Nav><Link to="/">Home</Link></Nav>
-            <Nav><a href="https://jehough.github.io/">Blog</a></Nav>
-            <Nav><Link to="/projects">My Projects</Link></Nav>
-            <Nav><Link to="/background">My Background</Link></Nav>
-          </div>
-        </Navbar.Collapse>
-      </Navbar>
+      <SideNav>
+        <SideNav.Toggle />
+        <SideNav.Nav defaultSelected="">
+            <NavItem eventKey="">
+              <NavIcon>
+              </NavIcon>
+              <NavText>
+                <Link to="/">
+                    Home
+                </Link>
+              </NavText>
+            </NavItem>
+            <NavItem eventKey="projects">
+                <NavIcon>
+                    <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} />
+                </NavIcon>
+                <NavText>
+                  <Link to="/projects">
+                    Devices
+                  </Link>
+                </NavText>
+            </NavItem>
+        </SideNav.Nav>
+    </SideNav>
     )
   }
 }
