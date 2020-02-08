@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Link, Redirect} from 'react-router-dom';
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
-import Dropdown from '../components/dropdown.js'
 
 
 class NavSideBar extends Component {
@@ -41,6 +40,14 @@ class NavSideBar extends Component {
                 </NavIcon>
                 <NavText>
                     My Projects
+                </NavText>
+            </NavItem>
+            <NavItem eventKey="background">
+                <NavIcon>
+                    <span className="far fa-address-card"></span>
+                </NavIcon>
+                <NavText>
+                    My Background
                 </NavText>
             </NavItem>
         </SideNav.Nav>
