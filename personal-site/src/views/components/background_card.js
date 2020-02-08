@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import BackgroundInfo from './background_info'
 
 export default class BackgroundCard extends Component{
 
@@ -11,7 +12,7 @@ export default class BackgroundCard extends Component{
             {this.props.show ?  "Hide":"Show"}
           </button>
         </div>
-        {this.props.show ? <p>hello</p>:null}
+        {this.props.show ? <BackgroundInfo points={this.props.obj.points}/>:null}
       </div>
     )
   }
