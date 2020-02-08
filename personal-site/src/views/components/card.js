@@ -5,9 +5,9 @@ const DisplayCard = props => {
   return(
     <Card style={{width: '20rem'}}>
       <iframe src= {props.obj.videoUrl}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen />
+        allowFullScreen />
       <Card.Body>
         <Card.Title><a href={props.obj.githubUrl}>{props.obj.name}</a></Card.Title>
         <Card.Text>{props.obj.description}</Card.Text>

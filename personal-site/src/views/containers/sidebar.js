@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import Dropdown from '../components/dropdown.js'
 
@@ -8,14 +8,17 @@ class NavSideBar extends Component {
 
   render(){
     return(
-      <SideNav >
+      <SideNav
+        onSelect={(selected) => {
+          console.log(selected)
+        }}>
         <SideNav.Toggle />
         <SideNav.Nav defaultSelected="">
             <NavItem eventKey="">
               <NavIcon>
-                <span class="fas fa-home"></span>
+                <span className="fas fa-home"></span>
               </NavIcon>
-              <NavText>
+              <NavText eventKey="">
                 <Link to="/">
                     Home
                 </Link>
@@ -23,7 +26,7 @@ class NavSideBar extends Component {
             </NavItem>
             <NavItem eventKey="blog">
                 <NavIcon>
-                    <span class="fas fa-blog"></span>
+                    <span className="fas fa-blog"></span>
                 </NavIcon>
                 <NavText>
                   <a href="https://jehough.github.io">
@@ -33,7 +36,7 @@ class NavSideBar extends Component {
             </NavItem>
             <NavItem eventKey="projects">
                 <NavIcon>
-                    <span class="fas fa-code"></span>
+                    <span className="fas fa-code"></span>
                 </NavIcon>
                 <NavText>
                   <Link to="/projects">
