@@ -29,16 +29,28 @@ export const backgroundList = [
   {
     name: "Education",
     value: "showEd",
-    points: []
+    points: [
+              "North Carolina State University 2003-2007 BA Political Science",
+              "FlatIron School 2019 Software Engineering Program"
+            ]
   },
   {
     name: "Navy (2007-2011)",
     value: "showNa",
-    points: []
+    points: [
+              "Led teams in different capacities (ie: gas turbine engines, administration, navigation) to drive efficiencies aboard the ship to complete confidential missions assigned",
+              "Served as Main Propulsion Division Officer onboard USS Klakring and Navigation Head on USS Taylor",
+              "Visited more than 30 different countries during 3 deployments over 4 years"
+            ]
   },
   {
     name: "Teacher (2011-Present)",
     value: "showTe",
-    points: []
+    points: [
+              "Taught a variety of classes thate help students build analytical skills",
+              "Math: Pre-Algebra, Algebra, Geometry, Algebra II and Precalculus",
+              "Science: Chemistry, Physics, Advanced Physics",
+              "Other: Logic, Western Thought 1, 2 and 3(history of Western philosophy)"
+            ]
   }
 ]

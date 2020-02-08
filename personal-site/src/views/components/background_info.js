@@ -4,8 +4,10 @@ export default class BackgroundInfo extends Component{
 
   render(){
     return(
-      <div>
-        <p>This is where info will go</p>
+      <div className="infoCard">
+        <ul>
+          {this.props.points.map(point => <li>{point}</li>)}
+        </ul>
       </div>
     )
   }
