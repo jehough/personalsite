@@ -50,7 +50,7 @@ export const backgroundList = [
               "Taught a variety of classes thate help students build analytical skills",
               "Math: Pre-Algebra, Algebra, Geometry, Algebra II and Precalculus",
               "Science: Chemistry, Physics, Advanced Physics",
-              "Other: Logic, Western Thought 1, 2 and 3(history of Western philosophy)"
+              "Other: Logic, Western Thought 1, 2 and 3 (History of Western philosophy)"
             ]
   }
 ]
