@@ -8,7 +8,7 @@ class NavSideBar extends Component {
 
   render(){
     return(
-      <SideNav>
+      <SideNav className="side">
         <SideNav.Toggle />
         <SideNav.Nav defaultSelected="">
             <NavItem eventKey="">
@@ -19,6 +19,16 @@ class NavSideBar extends Component {
                     Home
                 </Link>
               </NavText>
+            </NavItem>
+            <NavItem eventKey="projects">
+                <NavIcon>
+                    <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} />
+                </NavIcon>
+                <NavText>
+                  <a href="https://jehough.github.io">
+                    Blog
+                  </a>
+                </NavText>
             </NavItem>
             <NavItem eventKey="projects">
                 <NavIcon>
