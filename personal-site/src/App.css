@@ -88,6 +88,27 @@
 
 }
 
+.backgroundHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40em;
+  height: 3em;
+  padding-left: 1%;
+  border: solid;
+  border-width: thin;
+  border-radius: .5em;
+  background-color: #1d1f21;
+  color: #84d240
+}
+
+
+.backgroundHeader button{
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
 #header-image{
   width: 100%;
 }

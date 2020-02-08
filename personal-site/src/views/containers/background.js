@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
+import BackgroundCard from '../components/background_card'
+import {backgroundList} from '../../helper'
 
 export default class Background extends Component{
   constructor(){
     super()
     this.state = {
       showEd: false,
-      showNa: false
+      showNa: false,
+      showTe: false
     }
   }
 
@@ -21,16 +24,7 @@ export default class Background extends Component{
     return(
       <div>
         <h1>My Background</h1>
-        <div className="backgroundHeader">
-          <h3>Education</h3>
-          <button value="showEd" onClick={this.handleClick}>Down</button>
-        </div>
-        {this.state.showEd ? <p>hello</p>:<p>not here</p>}
-        <div className="backgroundHeader">
-          <h3>Navy</h3>
-          <button value="showNa" onClick={this.handleClick}>Down</button>
-        </div>
-        {this.state.showNa ? <p>hello</p>:<p>not here</p>}
+        {backgroundList.map(obj => <BackgroundCard obj={obj} show={eval(`this.state.${obj.value}`)} handleClick={this.handleClick}/>)}
       </div>
     )
   }

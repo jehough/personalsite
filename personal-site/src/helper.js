@@ -24,3 +24,21 @@ export const projectList = [
     description: "A site where doctors and patients can schedule appointments and track patient medical information"
   }
 ]
+
+export const backgroundList = [
+  {
+    name: "Education",
+    value: "showEd",
+    points: []
+  },
+  {
+    name: "Navy (2007-2011)",
+    value: "showNa",
+    points: []
+  },
+  {
+    name: "Teacher (2011-Present)",
+    value: "showTe",
+    points: []
+  }
+]
