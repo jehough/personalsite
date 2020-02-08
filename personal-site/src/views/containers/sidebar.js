@@ -8,11 +8,12 @@ class NavSideBar extends Component {
 
   render(){
     return(
-      <SideNav className="side">
+      <SideNav >
         <SideNav.Toggle />
         <SideNav.Nav defaultSelected="">
             <NavItem eventKey="">
               <NavIcon>
+                <span class="fas fa-home"></span>
               </NavIcon>
               <NavText>
                 <Link to="/">
@@ -20,9 +21,9 @@ class NavSideBar extends Component {
                 </Link>
               </NavText>
             </NavItem>
-            <NavItem eventKey="projects">
+            <NavItem eventKey="blog">
                 <NavIcon>
-                    <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} />
+                    <span class="fas fa-blog"></span>
                 </NavIcon>
                 <NavText>
                   <a href="https://jehough.github.io">
@@ -32,11 +33,11 @@ class NavSideBar extends Component {
             </NavItem>
             <NavItem eventKey="projects">
                 <NavIcon>
-                    <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} />
+                    <span class="fas fa-code"></span>
                 </NavIcon>
                 <NavText>
                   <Link to="/projects">
-                    Devices
+                    My Projects
                   </Link>
                 </NavText>
             </NavItem>
