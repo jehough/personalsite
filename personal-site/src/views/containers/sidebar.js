@@ -10,18 +10,21 @@ class NavSideBar extends Component {
     return(
       <SideNav
         onSelect={(selected) => {
-          console.log(selected)
-        }}>
+            const send= "/" + selected
+            if (this.props.location !== send){
+              this.props.history.push(send)
+            }
+          }
+        }
+      >
         <SideNav.Toggle />
         <SideNav.Nav defaultSelected="">
             <NavItem eventKey="">
               <NavIcon>
                 <span className="fas fa-home"></span>
               </NavIcon>
-              <NavText eventKey="">
-                <Link to="/">
+              <NavText >
                     Home
-                </Link>
               </NavText>
             </NavItem>
             <NavItem eventKey="blog">
@@ -29,9 +32,7 @@ class NavSideBar extends Component {
                     <span className="fas fa-blog"></span>
                 </NavIcon>
                 <NavText>
-                  <a href="https://jehough.github.io">
                     Blog
-                  </a>
                 </NavText>
             </NavItem>
             <NavItem eventKey="projects">
@@ -39,9 +40,7 @@ class NavSideBar extends Component {
                     <span className="fas fa-code"></span>
                 </NavIcon>
                 <NavText>
-                  <Link to="/projects">
                     My Projects
-                  </Link>
                 </NavText>
             </NavItem>
         </SideNav.Nav>

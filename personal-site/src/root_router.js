@@ -14,13 +14,15 @@ export default class RootRouter extends Component{
   render(){
     return(
       <Router>
-        <div className="siteFrame">
-          <Header />
-          <NavSideBar />
-        </div>
+        <Header />
+        <Route render={props => <NavSideBar {...props}/>} />
+
         <div className="main">
           <Switch>
           <Route exact path='/' component={Home}/>
+          <Route path='/blog' component={()=>{
+            window.location.href="https://jehough.github.io"
+          }} />
           <Route path='/projects' component={Project} />
           <Route path='/background' component={Background} />
           </Switch>
