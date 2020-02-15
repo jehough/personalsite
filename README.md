@@ -1,2 +1,2 @@
 # personalsite
-Personal website with blog
+Personal website
