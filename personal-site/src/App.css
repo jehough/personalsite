@@ -121,6 +121,7 @@
   border-color: black;
   border-radius: .5em;
   box-shadow: .3em .3em .3em .3em #000000;
+  font-family: Georgia, serif;
 }
 
 #header-image{
