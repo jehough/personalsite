@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
@@ -13,7 +13,7 @@ import Header from './views/components/header'
 export default class RootRouter extends Component{
   render(){
     return(
-      <Router>
+      <Router basename="/">
         <Header />
         <Route render={props => <NavSideBar {...props}/>} />
 
