@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
@@ -13,7 +13,7 @@ import Header from './views/components/header'
 export default class RootRouter extends Component{
   render(){
     return(
-      <Router basename="/">
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Route render={props => <NavSideBar {...props}/>} />
 
